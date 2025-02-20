@@ -23,16 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add section highlighting functionality
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
+    const navHeight = document.querySelector('.navbar').offsetHeight;
 
     function highlightNavigation() {
-        const scrollY = window.scrollY;
+        let fromTop = window.scrollY + navHeight + 20; // Added extra offset
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100; // Adjust offset for navbar height
-            const sectionBottom = sectionTop + section.offsetHeight;
+            const { offsetTop, offsetHeight } = section;
             const sectionId = section.getAttribute('id');
-
-            if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            
+            if (
+                offsetTop <= fromTop &&
+                offsetTop + offsetHeight > fromTop
+            ) {
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === '#' + sectionId) {
@@ -41,10 +44,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+
+        // Handle case when at the bottom of the page
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#contact') {
+                    link.classList.add('active');
+                }
+            });
+        }
     }
 
-    // Add scroll event listener
-    window.addEventListener('scroll', highlightNavigation);
+    // Add scroll event listener with throttling
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                highlightNavigation();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
     // Call once on load
     highlightNavigation();
+
+    // Update on window resize
+    window.addEventListener('resize', highlightNavigation);
 }); 
