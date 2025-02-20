@@ -20,13 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
     }
 
-    // Add section highlighting functionality
+    const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
-    const navHeight = document.querySelector('.navbar').offsetHeight;
+
+    function updateNavbarVisibility() {
+        const scrollY = window.scrollY;
+        const homeSection = document.getElementById('home');
+        const homeSectionBottom = homeSection.offsetTop + homeSection.offsetHeight;
+
+        if (scrollY > homeSectionBottom - navbar.offsetHeight) {
+            navbar.classList.add('navbar-hidden');
+        } else {
+            navbar.classList.remove('navbar-hidden');
+        }
+    }
 
     function highlightNavigation() {
-        let fromTop = window.scrollY + navHeight + 20; // Added extra offset
+        let fromTop = window.scrollY + navbar.offsetHeight + 20;
 
         sections.forEach(section => {
             const { offsetTop, offsetHeight } = section;
@@ -44,16 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-
-        // Handle case when at the bottom of the page
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#contact') {
-                    link.classList.add('active');
-                }
-            });
-        }
     }
 
     // Add scroll event listener with throttling
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!ticking) {
             window.requestAnimationFrame(() => {
                 highlightNavigation();
+                updateNavbarVisibility();
                 ticking = false;
             });
             ticking = true;
@@ -70,7 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Call once on load
     highlightNavigation();
+    updateNavbarVisibility();
 
     // Update on window resize
-    window.addEventListener('resize', highlightNavigation);
+    window.addEventListener('resize', () => {
+        highlightNavigation();
+        updateNavbarVisibility();
+    });
 }); 
