@@ -590,4 +590,21 @@ footer {
     background-color: var(--card-bg);
     color: var(--text-color);
     box-shadow: 0 -2px 10px var(--shadow);
+}
+
+/* Custom styles for the Experience Accordion */
+.accordion-button {
+    background-color: var(--card-bg) !important; /* Background for closed accordion buttons */
+    color: var(--text-color) !important; /* Text color for accordion button */
+    border: 1px solid var(--border-color) !important; /* Border color for accordion button */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--secondary-color) !important; /* Background for expanded accordion button */
+    color: var(--bg-color) !important; /* Text color for expanded accordion button */
+}
+
+.accordion-body {
+    background-color: var(--card-bg) !important; /* Background for accordion body */
+    color: var(--text-color) !important; /* Text color for accordion body */
 } 

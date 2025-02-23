@@ -4,6 +4,7 @@
     --card-bg: #f8f9fa;
     --border-color: #dee2e6;
     --primary-color: #0d6efd; /* Bootstrap primary color */
+    --secondary-color: #6c757d; /* Example secondary color */
     --primary-color-rgb: 13, 110, 253; /* RGB values for primary color */
 }
 
@@ -12,7 +13,8 @@
     --text-color: #ffffff;
     --card-bg: #2d2d2d;
     --border-color: #404040;
-    --primary-color: #3d8bfd; /* Lighter blue for dark mode */
+    --primary-color: #3d8bfd; /* Lighter blue for dark mode primary color */
+    --secondary-color: #6c757d; /* Example secondary color for dark mode */
     --primary-color-rgb: 61, 139, 253; /* RGB values for dark mode primary color */
 }
 
