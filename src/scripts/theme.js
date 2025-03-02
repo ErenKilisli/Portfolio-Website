@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     const icon = themeToggle.querySelector('i');
     
-    // Check for saved theme preference or default to 'dark'
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.body.setAttribute('data-theme', currentTheme);
     updateIcon(currentTheme);
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add scroll event listener with throttling
     let ticking = false;
     window.addEventListener('scroll', () => {
         if (!ticking) {
@@ -70,11 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Call once on load
     highlightNavigation();
     updateNavbarVisibility();
-
-    // Update on window resize
     window.addEventListener('resize', () => {
         highlightNavigation();
         updateNavbarVisibility();
