@@ -2,6 +2,7 @@
 <meta http-equiv="refresh" content="0; url=https://erenkilisli.github.io/Portfolio-Website/" />
 
 # Portfolio-Website
+<<<<<<< HEAD
 
 Welcome to my Personal Portfolio Website repository! This project is a one-page responsive portfolio that showcases my profile, work experience, education, projects, and provides a direct way to contact me.
 
@@ -126,3 +127,5 @@ If you have any questions or suggestions, please feel free to reach out:
 - **Email:** [ierenkilisli@gmail.com](mailto:ierenkilisli@gmail.com)
 - **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com)
 - **GitHub:** [Your GitHub Profile](https://github.com)
+=======
+>>>>>>> ee2bc178b3e2142dd90e7ffc0ef39822bfc53db5
