@@ -1,8 +1,6 @@
-
-<meta http-equiv="refresh" content="0; url=https://erenkilisli.github.io/Portfolio-Website/" />
-
 # Portfolio-Website
-<<<<<<< HEAD
+
+[Check Out Website](https://erenkilisli.github.io/Portfolio-Website/)
 
 Welcome to my Personal Portfolio Website repository! This project is a one-page responsive portfolio that showcases my profile, work experience, education, projects, and provides a direct way to contact me.
 
@@ -13,7 +11,6 @@ Welcome to my Personal Portfolio Website repository! This project is a one-page 
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Development Roadmap](#development-roadmap)
 - [Installation & Usage](#installation--usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -67,37 +64,6 @@ This project is a modern, single-page portfolio website built with a mobile-firs
 
 ---
 
-## Development Roadmap
-
-### Phase 1: Project Setup and Basic Structure (Days 1-2)
-- Initialize repository, set up folder structure, and basic HTML/CSS.
-
-### Phase 2: Navigation and Home Section (Days 3-4)
-- Develop a fixed-top navbar with smooth scrolling and section highlighting.
-- Build the Home section with profile image, bio, and social links.
-
-### Phase 3: Experience and Education Sections (Days 5-6)
-- Implement a timeline for work experience with expandable entries.
-- Create a grid layout for education credentials and achievements.
-
-### Phase 4: Portfolio Section (Days 7-8)
-- Develop an interactive project card layout with filtering options.
-- Build modal views for detailed project descriptions.
-
-### Phase 5: Contact Section (Days 9-10)
-- Create a contact form with validation and backend integration for direct email delivery.
-
-### Phase 6: Theme Implementation (Days 11-12)
-- Add light/dark mode toggle, using CSS custom properties and local storage for theme persistence.
-
-### Phase 7: Testing and Optimization (Days 13-14)
-- Perform cross-browser and mobile testing, optimize assets, and ensure accessibility.
-
-### Phase 8: Final Polish and Launch (Day 15)
-- Final reviews, testing, documentation updates, and deployment.
-
----
-
 ## Installation & Usage
 
 ### Prerequisites
@@ -125,7 +91,5 @@ This project is open source and available under the MIT License.
 If you have any questions or suggestions, please feel free to reach out:
 
 - **Email:** [ierenkilisli@gmail.com](mailto:ierenkilisli@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com)
-- **GitHub:** [Your GitHub Profile](https://github.com)
-=======
->>>>>>> ee2bc178b3e2142dd90e7ffc0ef39822bfc53db5
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/ibrahim-eren-kilisli-762603219/)
+- **GitHub:** [Your GitHub Profile](https://github.com/ErenKilisli)
