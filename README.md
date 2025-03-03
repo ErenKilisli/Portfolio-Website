@@ -91,5 +91,5 @@ This project is open source and available under the MIT License.
 If you have any questions or suggestions, please feel free to reach out:
 
 - **Email:** [ierenkilisli@gmail.com](mailto:ierenkilisli@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/ibrahim-eren-kilisli-762603219/)
-- **GitHub:** [Your GitHub Profile](https://github.com/ErenKilisli)
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/ibrahim-eren-kilisli-762603219/)
+- **GitHub:** [My GitHub Profile](https://github.com/ErenKilisli)
