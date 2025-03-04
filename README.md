@@ -20,7 +20,7 @@ Welcome to my Personal Portfolio Website repository! This project is a one-page 
 
 ## Overview
 
-This project is a modern, single-page portfolio website built with a mobile-first approach. It features a fixed top navigation bar with smooth scrolling and section highlighting, making it easy for visitors to explore my professional background, education, portfolio projects, and get in touch with me.
+This project is a modern, single-page portfolio website built with a mobile-first approach. It features a fixed top navigation bar with smooth scrolling and section highlighting, making it easy for visitors to explore my professional background, education, portfolio projects, and get in touch with me. Also web site has a light/dark mode feature.
 
 ---
 
@@ -57,7 +57,7 @@ This project is a modern, single-page portfolio website built with a mobile-firs
 
 ## Tech Stack
 
-- **Bootstrap 5:** For responsive design and pre-built UI components.
+- **Bootstrap 5:** For responsive design and pre-built UI components and easy and fast approach for site.
 - **Font Awesome:** For high-quality icons (social media, email, etc.).
 - **Google Fonts:** For custom typography.
 - **jQuery:** For simplified DOM manipulation and smooth scrolling effects.
