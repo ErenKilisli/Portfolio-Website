@@ -45,7 +45,7 @@ This project is a modern, single-page portfolio website built with a mobile-firs
   Showcases projects with interactive cards that enlarge on click to provide detailed project information, including the technology stack used.
 
 - **Contact Section:**  
-  Features a contact form with validation, directly sending messages to my email (ierenkilisli@gmail.com).
+  Features a contact form with validation, directly sending messages to my [email](ierenkilisli@gmail.com).
 
 - **Theme Toggle:**  
   Light and dark mode support with a smooth transition and persistent user preference.
