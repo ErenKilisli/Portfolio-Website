@@ -9,11 +9,11 @@
 }
 
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
-    --card-bg: #2d2d2d;
+    --bg-color: #2a2a2a;
+    --text-color: #d0d0d0;
+    --card-bg: #1d1d1d;
     --border-color: #404040;
-    --primary-color: #3d8bfd; /* Lighter blue for dark mode primary color */
+    --primary-color: #24189f; /* Lighter blue for dark mode primary color */
     --secondary-color: #6c757d; /* Example secondary color for dark mode */
     --primary-color-rgb: 61, 139, 253; /* RGB values for dark mode primary color */
 }
