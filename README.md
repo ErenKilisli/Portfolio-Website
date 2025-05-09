@@ -88,7 +88,7 @@ This project is open source and available under the MIT License.
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out:
+If you have any questions or suggestions, feel free to reach out to me:
 
 - **Email:** [ierenkilisli@gmail.com](mailto:ierenkilisli@gmail.com)
 - **LinkedIn:** [My LinkedIn Profile Link](https://www.linkedin.com/in/ibrahim-eren-kilisli-762603219/)
