@@ -70,81 +70,110 @@
         </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section id="experience" class="py-5">
-    <div class="container">
-        <h2 class="section-title mb-4">Work Experience</h2>
+    <!-- Experience Section -->
+<section id="experience" class="py-5" style="color: var(--text-color);">
+  <div class="container">
+    <h2 class="text-center mb-5">Work Experience</h2>
 
-        <!-- Junior Game Developer – Playable Factory -->
-        <div class="experience-item mb-4">
-        <div class="d-flex justify-content-between">
-            <h3 class="h5 mb-0">Junior Game Developer</h3>
-            <span class="text-muted">04/2025 – 08/2025</span>
+    <div class="accordion" id="experienceAccordion">
+      <!-- PLAYABLE FACTORY -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPLAYABLE">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapsePLAYABLE"
+                  aria-expanded="true" aria-controls="collapsePLAYABLE">
+            <div class="d-flex flex-column">
+              <span class="fw-bold">Junior Game Developer</span>
+              <span class="text-muted fs-6">Playable Factory | 04/2024 - 08/2024</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapsePLAYABLE" class="accordion-collapse collapse show"
+             aria-labelledby="headingPLAYABLE" data-bs-parent="#experienceAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Built interactive HTML5 playable ads with JavaScript and Pixi.js, optimizing load times and touch performance for mobile users.</li>
+              <li>Partnered with artists, producers, and QA to run rapid A/B tests and refine creatives based on analytics feedback.</li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mb-1">
-            <p class="mb-0"><strong>Playable Factory</strong></p>
-            <p class="mb-0 text-muted">Istanbul, Türkiye</p>
-        </div>
-        <ul class="mb-0">
-            <li>Built interactive <strong>HTML5 playable ads</strong> with JavaScript and <strong>Pixi.js</strong>, tuned for smooth mobile performance.</li>
-            <li>Worked closely with Product on scope and quick A/B experiments.</li>
-        </ul>
-        </div>
+      </div>
 
-        <!-- Junior Game Developer – Tigloos Games -->
-        <div class="experience-item mb-4">
-        <div class="d-flex justify-content-between">
-            <h3 class="h5 mb-0">Junior Game Developer</h3>
-            <span class="text-muted">11/2023 – 06/2024</span>
+      <!-- TIGLOOS GAMES -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTIGLOOS">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTIGLOOS"
+                  aria-expanded="false" aria-controls="collapseTIGLOOS">
+            <div class="d-flex flex-column">
+              <span class="fw-bold">Game Developer</span>
+              <span class="text-muted fs-6">TIGLOOS GAMES | 11/2023 - 06/2024</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseTIGLOOS" class="accordion-collapse collapse"
+             aria-labelledby="headingTIGLOOS" data-bs-parent="#experienceAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Developed and optimized gameplay mechanics, AI systems, and UI/UX using Unreal Engine and C++, collaborating with designers to ship weekly prototypes.</li>
+              <li>Improved real-time rendering, physics interactions, and animation blueprints for better performance and player immersion.</li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mb-1">
-            <p class="mb-0"><strong>Tigloos Games</strong></p>
-            <p class="mb-0 text-muted">Istanbul, Türkiye</p>
-        </div>
-        <ul class="mb-0">
-            <li>Developed and optimized gameplay mechanics, AI systems, and UI/UX using <strong>Unreal Engine</strong> and <strong>C++</strong>.</li>
-            <li>Improved real-time rendering, physics interactions, and animation blueprints for better performance and player immersion.</li>
-        </ul>
-        </div>
+      </div>
 
-        <!-- Product Manager – Rezinn -->
-        <div class="experience-item mb-4">
-        <div class="d-flex justify-content-between">
-            <h3 class="h5 mb-0">Product Manager</h3>
-            <span class="text-muted">01/2022 – 11/2023</span>
+      <!-- REZINN -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingREZINN">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseREZINN"
+                  aria-expanded="false" aria-controls="collapseREZINN">
+            <div class="d-flex flex-column">
+              <span class="fw-bold">Product Manager & Software Engineer</span>
+              <span class="text-muted fs-6">Rezinn | 01/2022 - 04/2024</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseREZINN" class="accordion-collapse collapse"
+             aria-labelledby="headingREZINN" data-bs-parent="#experienceAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Led product strategy and roadmap execution, aligning releases with user insights and business objectives.</li>
+              <li>Coordinated cross-functional delivery with Design, Engineering, and Marketing to keep milestones on track.</li>
+              <li>Optimized scalable mobile features by integrating APIs, improving database performance, and resolving critical defects alongside QA.</li>
+              <li>Managed budgets, resources, and risk while contributing to code reviews and sprint planning with the development team.</li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mb-1">
-            <p class="mb-0"><strong>Rezinn</strong></p>
-            <p class="mb-0 text-muted">Istanbul, Türkiye</p>
-        </div>
-        <ul class="mb-0">
-            <li>Led <strong>product strategy</strong> and <strong>roadmap execution</strong>, aligning features with user needs and business objectives.</li>
-            <li>Managed <strong>cross-functional collaboration</strong> with Development, Marketing, and Design teams to ensure on-time product delivery.</li>
-            <li>Oversaw <strong>budget allocation</strong>, <strong>resource planning</strong>, and <strong>risk management</strong> to optimize operational efficiency.</li>
-            <li>Contributed hands-on with small features/bug fixes and API integrations; joined sprint planning and code reviews.</li>
-        </ul>
-        </div>
+      </div>
 
-        <!-- Software Engineering Intern – HBB -->
-        <div class="experience-item mb-4">
-        <div class="d-flex justify-content-between">
-            <h3 class="h5 mb-0">Software Engineering Intern</h3>
-            <span class="text-muted">05/2023 – 10/2023</span>
+      <!-- HATAY METROPOLITAN MUNICIPALITY -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHATAY">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseHATAY"
+                  aria-expanded="false" aria-controls="collapseHATAY">
+            <div class="d-flex flex-column">
+              <span class="fw-bold">Data Analyst Intern</span>
+              <span class="text-muted fs-6">Hatay Metropolitan Municipality | 06/2023 - 10/2023</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseHATAY" class="accordion-collapse collapse"
+             aria-labelledby="headingHATAY" data-bs-parent="#experienceAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Structured and analyzed post-earthquake datasets using SQL, Python, and Power BI.</li>
+              <li>Built interactive dashboards for data-driven decision-making in public service recovery efforts.</li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mb-1">
-            <p class="mb-0"><strong>HBB</strong></p>
-            <p class="mb-0 text-muted">Istanbul, Türkiye</p>
-        </div>
-        <ul class="mb-0">
-            <li>Structured and analyzed <strong>post-earthquake datasets</strong> using <strong>SQL</strong>, <strong>Python</strong>, and <strong>Power BI</strong>.</li>
-            <li>Built interactive dashboards for data-driven decision-making in public service recovery efforts.</li>
-        </ul>
-        </div>
+      </div>
 
-    </div>
-    </section>
+    </div><!-- /accordion -->
+  </div>
+</section>
 
-    
     <!-- Education Section -->
     <section id="education" class="py-5">
         <div class="container">
