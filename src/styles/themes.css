@@ -19,6 +19,21 @@
     --primary-color-rgb: 61, 139, 253; /* RGB values for dark mode primary color */
 }
 
+
+[data-theme="dark"] .navbar-brand-group .btn-outline-primary {
+    background-color: rgba(var(--primary-color-rgb), 0.25);
+    color: #ffffff;
+    box-shadow:
+        0 0 0 1px rgba(var(--primary-color-rgb), 0.7),
+        0 0 24px rgba(var(--primary-color-rgb), 0.7);
+}
+
+[data-theme="dark"] .navbar-brand-group .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+}
+
+
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -45,10 +60,29 @@ body {
     transform: none;
 }
 
-/* Adjust transition for navbar elements */
 .navbar-brand-group .btn-outline-primary {
-    transition: all 0.3s ease;
+    border-color: var(--primary-color);
+    background-color: rgba(var(--primary-color-rgb), 0.12);   /* hafif dolu buton */
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;                                    /* full pill */
+    font-weight: 600;
+    box-shadow:
+        0 0 0 1px rgba(var(--primary-color-rgb), 0.35),
+        0 0 14px rgba(var(--primary-color-rgb), 0.35);
+    transition: all 0.2s ease;
 }
+
+.navbar-brand-group .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    box-shadow:
+        0 0 0 1px rgba(var(--primary-color-rgb), 0.6),
+        0 0 20px rgba(var(--primary-color-rgb), 0.6);
+    transform: translateY(-1px);
+}
+
 
 /* Adjust buttons in smaller navbar */
 .navbar-hidden .navbar-brand-group .btn-outline-primary {
